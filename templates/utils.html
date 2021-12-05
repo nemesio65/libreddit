@@ -46,8 +46,8 @@
 			<a href="/">Home</a>
 			<a href="/r/popular">Popular</a>
 			<a href="/r/all">All</a>
-			<p>REDDIT FEEDS</p>
 			{% for sub in prefs.subscriptions %}
+				<p>REDDIT FEEDS</p>
 				<a href="/r/{{ sub }}" {% if sub == current %}class="selected"{% endif %}>{{ sub }}</a>
 			{% endfor %}
 		</div>
